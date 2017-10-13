@@ -2,7 +2,7 @@
 #include <cassert>
 #include <cstring>
 
-void printArray(const char *pA, const int &rSize)
+void printCString(const char *pA, const int &rSize)
 {
     assert(pA != nullptr);
     assert(rSize >= 0);
@@ -14,7 +14,7 @@ void printArray(const char *pA, const int &rSize)
     std::cout << std::endl;
 }
 
-void writeToArray(char *pA, const int &rSize)
+void writeToCString(char *pA, const int &rSize)
 {
     assert(pA != nullptr);
     assert(rSize >= 0);

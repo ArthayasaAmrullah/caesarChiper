@@ -13,15 +13,21 @@ int main()
 
     const int key = 3;
 
-    writeToArray(pPlainText, size);
+    writeToCString(pPlainText, size);
     chiper(pPlainText, size, pChiperText, key);
-    printArray(pChiperText, size);
+    printCString(pChiperText, size);
     dechiper(pChiperText, size, pHypothetiquePlainText, key);
-    printArray(pHypothetiquePlainText, size);
+
     if (!check(pPlainText, pHypothetiquePlainText))
     {
-        std::cout << "Dechipering is correct!\n";
+        std::cout << "\nDechipering succeed!\n";
+        printCString(pHypothetiquePlainText, size);
     }
+    else
+    {
+        std::cout << "Dechipering failed!\n";
+    }
+
     delete[] pPlainText;
     delete[] pChiperText;
     delete[] pHypothetiquePlainText;
