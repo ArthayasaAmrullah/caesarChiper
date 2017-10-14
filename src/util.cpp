@@ -21,7 +21,7 @@ void writeToCString(char *pA, const int &rSize)
 
     const int size = 4068;
     char *pTemp = new char[size];
-    std::cin >> pTemp;
+    std::cin.getline(pTemp, size);
     strncpy(pA, pTemp, rSize - 1);
     delete[] pTemp;
 }

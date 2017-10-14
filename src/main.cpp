@@ -16,8 +16,8 @@ int main()
     writeToCString(pPlainText, size);
     chiper(pPlainText, size, pChiperText, key);
     printCString(pChiperText, size);
-    dechiper(pChiperText, size, pHypothetiquePlainText, key);
 
+    dechiper(pChiperText, size, pHypothetiquePlainText, key);
     if (!check(pPlainText, pHypothetiquePlainText))
     {
         std::cout << "\nDechipering succeed!\n";
@@ -28,8 +28,15 @@ int main()
         std::cout << "Dechipering failed!\n";
     }
 
+    // if (!bruteforce(pChiperText, size, pHypothetiquePlainText, pPlainText))
+    // {
+    //     std::cout << "hacked!\n";
+    //     std::cout << pHypothetiquePlainText << "\n";
+    // }
+
     delete[] pPlainText;
     delete[] pChiperText;
     delete[] pHypothetiquePlainText;
+
     return 0;
 }
