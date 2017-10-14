@@ -33,6 +33,10 @@ int main()
     //     std::cout << "hacked!\n";
     //     std::cout << pHypothetiquePlainText << "\n";
     // }
+    // else
+    // {
+    //     std::cout << "Can't hack!\n";
+    // }
 
     delete[] pPlainText;
     delete[] pChiperText;
