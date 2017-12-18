@@ -1,27 +1,19 @@
-# Caesar cipher implementation
-
-<p>Program that implements Caesar chiper and dechiper as well,
+<h1><a id="Caesar_cipher_implementation_0"></a>Caesar cipher implementation</h1>
+<p>Program that implements Caesar chiper and dechiper as well,<br>
 for any key between 0 and 25.</p>
-
-# Tested
-
-_Tested under Archlinux with GCC 7.3 and Visual Studio 2017_
-
-# Getting repo
+<h1><a id="Tested_5"></a>Tested</h1>
+<p><em>Tested under Archlinux with GCC 7.3 and Visual Studio 2017</em></p>
+<h1><a id="Getting_repo_9"></a>Getting repo</h1>
 <p>Run under terminal</p>
-
-`cd ~`
-`mkdir -p cipher`
-`git clone https://github.com/lnikon/caesarChiper ~/chiper`
-
-# Compilation
-<p>For compilation under the terminal you can use Makefile.</p>
-<p>Open root folder of project under terminal and run</p>
-`make`
-
-**NO `make install` needed**
-
-<p>Also, you can compile manually.</p>
-<p>Just go to _src_ directory and run following command.</p>
-`g++ -0 -Wall main.cpp caesar.cpp util.cpp -o caesar`
-<p>To avoid compiler optimiziations exclude _-o_ from parameters list.</p>
+<p><code>cd ~</code><br>
+<code>mkdir -p cipher</code><br>
+<code>git clone https://github.com/lnikon/caesarChiper ~/chiper</code></p>
+<h1><a id="Compilation_16"></a>Compilation</h1>
+<p>For compilation under the terminal you can use Makefile.<br>
+Open root folder of project under terminal and run.<br>
+<code>make</code></p>
+<p><strong>NO <code>make install</code> needed</strong></p>
+<p>Also, you can compile manually.<br>
+Just go to <em>src</em> directory and run following command.<br>
+<code>g++ -0 -Wall main.cpp caesar.cpp util.cpp -o caesar</code><br>
+To avoid compiler optimiziations exclude <em>-o</em> from parameters list.</p
